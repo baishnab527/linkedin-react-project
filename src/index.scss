@@ -1,0 +1,78 @@
+
+:root{
+   
+    --color-text-primary:rgb(0 0 0 / 90%);
+    --color-text-secondary: rgb(0 0 0 / 60%);
+    --color-body-canvas: #f3f2f0;
+    --bg-hover: #e9e9e9;
+    --color-label:rgb(0 0 0 / 75%);
+    --color-link: #0a66c2;
+    --color-link-hover: #004182;
+    --color-body-child-canvas:  #ffffff;
+    --color-input-border: rgb(0 0 0 / 75%);
+    --color-button-container-primary: #0a66c2;
+    --color-text-button: #ffffff;
+    --hr:#c3c3c3;
+    --searchBarColor: #edf3f8;
+    --icon-color: #666666;
+    --searchIcon: #3b3d3e;
+    --primium-text-color: #915907;
+    --shadow-sm: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    --transition: all ease-in-out .1s; 
+    --body-color:#f4f2ee;
+    --left-width: 225px;
+    --middle-width: 555px;
+    --right-width: 300px;
+    --border-color:1px solid rgba(117, 117, 117, 0.2);
+    --text-decoration-color: #8443ce;
+    --post-button-border: #afafaf;
+}
+
+body{
+    background-color: var(--body-color);
+}
+
+.container{
+    width: 1130px;
+    margin: auto;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+p{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+ul{
+    margin-left: 0;
+    padding-left: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+input{
+    outline: none;
+}
+
+
+
+@font-face {
+    font-family: 'apple';
+    src: url('apple-webfont.woff2') format('woff2'),
+         url('apple-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

@@ -1,0 +1,188 @@
+.header {
+  border-bottom: 1px solid rgb(140 140 140 / 20%);
+  background-color: var(--color-body-child-canvas);
+  height: 52px;
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    height: 52px;
+    justify-content: center;
+    //=========================== header search box and logo design
+    .header-logo-searchbox {
+      display: flex;
+      align-items: center;
+      flex: 2;
+      gap: 4px;
+
+      .header-logo {
+        margin-top: 4px;
+        svg {
+          color: var(--color-link);
+          font-size: 40px;
+        }
+      }
+      .header-serchbox {
+        width: 380px;
+        .searchbox-show {
+          width: 280px;
+          background-color: var(--searchBarColor);
+          display: flex;
+          align-items: center;
+
+          border-radius: 4px;
+
+          transition: all ease-in-out 0.2s;
+
+          &:hover {
+            width: 100%;
+            border: 1px solid var(--searchIcon);
+          }
+          span {
+            padding-left: 15px;
+            margin-top: 4px;
+            cursor: pointer;
+
+            svg {
+              font-size: 14px;
+
+              color: var(--searchIcon);
+            }
+          }
+          input {
+            width: 92%;
+            height: 36px;
+            padding: 0px 10px;
+            border: none;
+            background: transparent;
+
+            &::placeholder {
+              font-size: 14px;
+              color: var(--searchIcon);
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+
+    // ========================  header menu design here
+    .header-menu {
+      border-right: 1px solid gray;
+      height: 52px;
+      width: 500px;
+      nav {
+        ul {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          margin-top: 2px;
+
+          li {
+            padding: 0px 14px;
+
+            a {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              font-size: 12px;
+
+              svg {
+                font-size: 24px;
+                color: var(--icon-color);
+              }
+
+              span {
+                font-size: 12px;
+                color: var(--icon-color);
+                font-weight: 300;
+                line-height: 20px;
+              }
+            }
+
+            &:nth-child(6) {
+              a {
+                img {
+                  height: 25px;
+                  width: 25px;
+                  object-fit: cover;
+                  border-radius: 50%;
+                }
+
+                span {
+                  display: flex;
+                  align-items: center;
+
+                  svg {
+                    font-size: 14px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // =====================Header buisness side design here;
+    .header-bussnes {
+      flex: 1;
+      width: 247px;
+      nav {
+        ul {
+          display: flex;
+          align-items: center;
+          margin-top: 2px;
+          gap: 10px;
+          justify-content: space-between;
+
+          li {
+            flex: 1;
+            text-align: center;
+            padding: 0px 5px;
+
+            a {
+              display: flex;
+              align-items: center;
+              flex-direction: column;
+              font-size: 13px;
+              font-weight: 300;
+
+              svg {
+                font-size: 24px;
+                color: var(--icon-color);
+              }
+
+              span {
+                display: flex;
+                color: var(--icon-color);
+                line-height: 20px;
+                font-size: 12px;
+                align-items: center;
+
+                svg {
+                  font-size: 14px;
+                }
+              }
+            }
+
+            &:nth-child(2) {
+              a {
+                text-decoration: underline;
+                text-decoration-color: var(--primium-text-color);
+                span {
+                  color: var(--primium-text-color);
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
